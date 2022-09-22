@@ -2,19 +2,21 @@
   <div id="app">
     <HeaderComponent />
     <MainComponent />
+    <NavComponent />
   </div>
 </template>
 
 <script>
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
-
+import NavComponent from './components/NavComponent.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
-    MainComponent
+    MainComponent,
+    NavComponent
 }
 }
 </script>
@@ -32,3 +34,5 @@ export default {
   box-sizing: border-box;
 }
 </style>
+
+
