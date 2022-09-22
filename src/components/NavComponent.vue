@@ -37,6 +37,7 @@ nav {
     padding: 3rem 0;
     display: flex;
     justify-content: center;
+    z-index: 3;
     
     div {
         display: flex;
