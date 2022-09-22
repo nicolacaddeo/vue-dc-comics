@@ -12,10 +12,10 @@ export default {
 
 <style scoped lang="scss">
     main {
-        min-height: 15vh;
-        margin-top: 2rem;
+        height: 15vh;
         padding: 2rem;
         background-color: #1c1c1c;
         color: #fff;
     }
 </style>
+        

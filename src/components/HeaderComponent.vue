@@ -1,6 +1,6 @@
 <template>
   <header>
-    <div>
+    <div id="logo">
         <img src="../assets/img/dc-logo.png" alt="logo DC">
     </div>
     <div>
@@ -29,6 +29,7 @@ export default {
 <style scoped lang="scss">
 header {
     display: flex;
+    height: 15vh;
     justify-content: space-around;
     align-items: center;
     width: 100%;
@@ -50,3 +51,5 @@ ul {
     }
 }
 </style>
+    
+    

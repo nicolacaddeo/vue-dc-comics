@@ -33,6 +33,7 @@ export default {
 <style scoped lang="scss">
 nav {
     background-color:  #0282f9;
+    height: 17vh;
     padding: 3rem 0;
     display: flex;
     justify-content: center;
