@@ -3,6 +3,7 @@
     <HeaderComponent />
     <MainComponent />
     <NavComponent />
+    <FooterComponent />
   </div>
 </template>
 
@@ -10,13 +11,15 @@
 import HeaderComponent from './components/HeaderComponent.vue';
 import MainComponent from './components/MainComponent.vue';
 import NavComponent from './components/NavComponent.vue';
+import FooterComponent from './components/FooterComponent.vue';
 
 export default {
   name: 'App',
   components: {
     HeaderComponent,
     MainComponent,
-    NavComponent
+    NavComponent,
+    FooterComponent
 }
 }
 </script>
