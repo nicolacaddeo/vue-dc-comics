@@ -7,7 +7,7 @@
           <div class="list-container">
             <h3>DC COMICS</h3>
             <ul>
-              <li v-for="(item) in dcComics" :key="item in dcComics">
+              <li v-for="item in dcComics" :key="item in dcComics">
                 {{ item.title }}
               </li>
             </ul>
@@ -108,15 +108,6 @@ export default {
     }
   </style>
 
-  <!-- 
-              <li>Characters</li>
-              <li>Comics</li>
-              <li>Movies</li>
-              <li>TV</li>
-              <li>Games</li>
-              <li>Videos</li>
-              <li>News</li>
-   -->
         
         
         
