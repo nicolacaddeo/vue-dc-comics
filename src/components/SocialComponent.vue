@@ -23,12 +23,10 @@ export default {
     },
     methods: {
       getSocialIcon: function(array, i) {
-        return `../../public/social/footer-${array[i]}.png`
+        return `social/footer-${array[i]}.png`
       }
     }
   }
-       
-
 </script>
         
 
@@ -62,4 +60,3 @@ export default {
   }
 }
 </style>
-        
