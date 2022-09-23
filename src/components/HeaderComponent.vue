@@ -5,24 +5,24 @@
     </div>
     <div>
         <ul>
-            <li>Characters</li>
-            <li>Comics</li>
-            <li>Movies</li>
-            <li>Tv</li>
-            <li>Games</li>
-            <li>Collectibles</li>
-            <li>Videos</li>
-            <li>Fans</li>
-            <li>News</li>
-            <li>Shop</li>
+            <li v-for="item in headerLinks" :key="item in headerLinks">
+                {{ item.name }}
+            </li>
         </ul>
     </div>
   </header>
 </template>
 
 <script>
+import {headerLinks} from '../data/header_links.js'
+
 export default {
-    name: 'HeaderComponent'
+    name: 'HeaderComponent',
+    data() {
+        return {
+            headerLinks
+        }
+    }
 }
 </script>
 
@@ -53,3 +53,4 @@ ul {
 </style>
     
     
+            
