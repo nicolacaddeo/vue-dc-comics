@@ -23,7 +23,7 @@ export default {
     },
     methods: {
       getSocialIcon: function(array, i) {
-        return `../assets/img/footer-${array[i]}.png`
+        return `../../public/social/footer-${array[i]}.png`
       }
     }
   }
