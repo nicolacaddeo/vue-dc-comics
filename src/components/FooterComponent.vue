@@ -7,44 +7,31 @@
           <div class="list-container">
             <h3>DC COMICS</h3>
             <ul>
-              <li>Characters</li>
-              <li>Comics</li>
-              <li>Movies</li>
-              <li>TV</li>
-              <li>Games</li>
-              <li>Videos</li>
-              <li>News</li>
+              <li v-for="(item) in dcComics" :key="item in dcComics">
+                {{ item.title }}
+              </li>
             </ul>
             <h3>SHOP</h3>
             <ul>
-              <li>Shop DC</li>
-              <li>Shop DC Collectibles</li>
+              <li v-for="item in shop" :key="item in shop">
+                {{ item.title }}
+              </li>
             </ul>
           </div>
           <div class="list-container">
             <h3>DC</h3>
             <ul>
-              <li>Terms of Use</li>
-              <li>Privacy Police (New)</li>
-              <li>Ad Choices</li>
-              <li>Advertising</li>
-              <li>Jobs</li>
-              <li>Subscriptions</li>
-              <li>Talent Workshops</li>
-              <li>CPSC Certificates</li>
-              <li>Ratings</li>
-              <li>Shop Help</li>
-              <li>Contact Us</li>
+              <li v-for="item in dc" :key="item in dc">
+                {{ item.title }}
+              </li>
             </ul>
           </div>
           <div class="list-container">
             <h3>SITES</h3>
             <ul>
-              <li>DC</li>
-              <li>MAD Magazine</li>
-              <li>DC Kids</li>
-              <li>DC Universe</li>
-              <li>DC Power Visa</li>
+              <li v-for="item in sites" :key="item in sites">
+              {{ item.title }}
+            </li>
             </ul>
           </div>
         </div>
@@ -53,14 +40,28 @@
         </div>
       </div>
     </section>
-    <section class="social-actions"></section>
+    <SocialComponent />
   </footer>
 </template>
 
 <script>
+import SocialComponent from './SocialComponent.vue';
+import { dcComics, shop, dc, sites } from '@/data/footer_data';
+
 export default {
-    name: 'FooterComponent'
+    name: "FooterComponent",
+    components: { SocialComponent },
+
+    data() {
+      return {
+        dcComics,
+        shop,
+        dc,
+        sites
+      }
+    }
 }
+
 </script>
 
 <style scoped lang="scss">
@@ -68,13 +69,6 @@ export default {
         min-height: 43vh;
         background-image: url('../assets/img/footer-bg.jpg');
     }
-    .social-actions {
-        height: 10vh;
-        background-color: #303030;
-        position: relative;
-        z-index: 3;
-    }
-
     .container {
       height: 43vh;
       width: 80%;
@@ -113,8 +107,20 @@ export default {
       bottom: 25%;
     }
   </style>
+
+  <!-- 
+              <li>Characters</li>
+              <li>Comics</li>
+              <li>Movies</li>
+              <li>TV</li>
+              <li>Games</li>
+              <li>Videos</li>
+              <li>News</li>
+   -->
         
         
         
               
       
+    
+
