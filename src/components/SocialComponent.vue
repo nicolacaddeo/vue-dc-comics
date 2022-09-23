@@ -54,9 +54,15 @@ export default {
   h3 {
     color: $social-blue;
     text-transform: uppercase;
+    padding-right: .5rem;
   }
   .social-icons {
     display: flex;
+    align-items: center;
+    img {
+      padding: 0 .5rem;
+      cursor: pointer;
+    }
   }
 }
 </style>
