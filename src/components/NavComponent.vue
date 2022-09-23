@@ -37,13 +37,12 @@ nav {
     padding: 3rem 0;
     display: flex;
     justify-content: center;
-    z-index: 3;
     
     div {
         display: flex;
         justify-content: center;
         align-items: center;
-        
+        z-index: 3;
     }
     a {
         text-decoration: none;
@@ -58,4 +57,5 @@ nav {
 }
 </style>    
         
+    
     
