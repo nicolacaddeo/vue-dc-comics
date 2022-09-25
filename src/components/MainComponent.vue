@@ -7,6 +7,9 @@
       :title = 'cards[i].series'
       :subTitle = 'cards[i].type' />
     </div>
+    <div id="load-more">
+      <button>Load More</button>
+    </div>
   </main>
 </template>
 
@@ -18,7 +21,7 @@
     name: "MainComponent",
     data() {
         return {
-            cards
+          cards
         };
     },
     components: { CardComponent }
@@ -36,6 +39,20 @@
       width: 80%;
       margin: 0 auto;
       display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  #load-more {
+    text-align: center;
+    margin-top: 2rem;
+    button {
+      padding: .8rem 3rem;
+      text-transform: uppercase;
+      font-weight: bold;
+      color: #fff;
+      background-color: #0282f9;
+      border: none;
+      cursor: pointer;
     }
   }
 </style>
