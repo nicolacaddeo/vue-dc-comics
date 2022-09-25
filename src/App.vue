@@ -23,8 +23,7 @@ export default {
     MainComponent,
     NavComponent,
     FooterComponent,
-    
-}
+  }
 }
 </script>
 
